@@ -1,0 +1,17 @@
+[model]
+embedding_dim = 15
+hidden_dim = 90
+num_layers = 2
+
+[vocab]
+file = 'vocab.txt'
+split_dictionary = true
+split_ratio = 0.8
+
+[training]
+batch_size = 1024
+epochs = 100
+learning_rate = 1e-3
+
+[saving]
+filename = 'hangman_lstm_model.pth'
