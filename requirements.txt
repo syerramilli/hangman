@@ -1,0 +1,8 @@
+ipython>=8.22.1
+notebook>=7.0
+numpy>=1.21
+scikit-learn>=1.2
+toml>=0.10
+torch>=2.0.0
+tqdm>=4.66
+nltk>=3.8
