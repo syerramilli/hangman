@@ -40,7 +40,7 @@ if __name__ == '__main__':
     print('Instantiating the model')
     # the vocab size is 28 because we have 26 letters and 2 special characters
     # 0 for padding and 27 for masked characters
-    model = CharBiLSTM(28, EMBEDDING_DIM, HIDDEN_DIM).to(device)
+    model = CharBiLSTM(28, EMBEDDING_DIM, HIDDEN_DIM, NUM_LAYERS).to(device)
     
     # define the loss function and the optimizer
     criterion = nn.CrossEntropyLoss()
