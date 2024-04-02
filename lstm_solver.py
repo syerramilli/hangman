@@ -51,7 +51,7 @@ class HangmanLSTMSolver:
             config['model']['hidden_dim'],
             config['model']['num_layers']
         )
-        self.model.load_state_dict(torch.load(config['saving']['model_state']))
+        self.model.load_state_dict(torch.load(config['saving']['model_state'], map_location=torch.device('cpu')))
     
     def populate_cts(self, dictionary):
         for word in dictionary:
